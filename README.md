@@ -14,9 +14,10 @@ I will not only add each algorithm here but will post each one as a public gist.
 
 ## The Algoritms
 
-1. [Day 01 - Euclid's Algorithm](src/01-euclids-gcd-algorithm.js)
-1. [Day 02 - Find Missing Number 1 ... N](src/02-find-missing-number-1-to-n.js)
-1. [Day 03 - Find Missing Number 0 ... N](src/03-find-missing-number-0-to-n.js)
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                           
+#### [Day 01 - Euclid's Algorithm](src/01-euclids-gcd-algorithm.js) - ([gist](GreatestCommonDivisor.js)) 
+   
+Euclid's Algorithm for finding the greatest common divisor of two positive integers.
+   
+#### [Day 02 - Find Missing Number 1 ... N](src/02-find-missing-number-1-to-n.js) - ([gist](https://gist.github.com/iconifyit/6d43593d38723fcca48b6f1807c54022))
+    
+Algorithm to find the missing number given an array of positive integers from 1 - N, with no duplicates and only one missing number.

@@ -50,6 +50,9 @@ log( `GCD of ${m} & ${n} is : ` + euclidsAlgorithm(50, 20) );
  * @param n
  * @returns {number}
  */
+// Use below formula for numbers not starting from 1
+// S = (n / 2) * (2 * a + (n-1) * d)
+// a = start number, n = length, d= difference -> 1 for consecutive numbers
 const missingNumber1toN = (a, n) => {
 
     let total = (n + 1) * (n + 2) / 2;

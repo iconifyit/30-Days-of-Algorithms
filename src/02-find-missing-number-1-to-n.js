@@ -12,30 +12,21 @@
  * @param   {array}   a   An array of positive integers.
  * @param   {int}     n   The length of `a`
  * @returns {number}
+ * @see https://www.geeksforgeeks.org/find-the-missing-number/
  */
 const findMissingNumber1toN = (a, n) => {
 
     /*
-     * We start by finding the sum of all numbers in `a`
+     * Calculate the sum of all numbers in the array.
      */
-    let sum = (n + 1) * (n + 2) / 2;
-    return sum;
-
-    console.log('Sum : ' + sum);
+    let sum = a.reduce((a, v) => a + v);
 
     /*
-     * Next, loop through `a`, subtracting each number from the `sum of a`
+     * Now calculate the maximum sum the array /could/ have with the missing
+     * number included then subtract the original sum. The result is the
+     * missing number.
      */
-    for (let i = 0; i < n; i++) {
-        let t1 = sum;
-        sum -= a[i];
-        console.log(t1 + ' - ' + a[i] + ' = ' + sum);
-    }
-
-    /*
-     * Whatever is left over is the missing number.
-     */
-    return sum;
+    return (n + 1) * (n + 2) / 2 - sum;
 }
 
 const a = [1, 2, 3, 5, 6];
