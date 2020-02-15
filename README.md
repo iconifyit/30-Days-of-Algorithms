@@ -14,7 +14,7 @@ I will not only add each algorithm here but will post each one as a public gist.
 
 ## The Algoritms
 
-#### [Day 01 - Euclid's Algorithm](src/01-euclids-gcd-algorithm.js) - ([gist](GreatestCommonDivisor.js)) 
+#### [Day 01 - Euclid's Algorithm](src/01-euclids-gcd-algorithm.js) - ([gist](https://gist.github.com/iconifyit/580d4ae1c9851bd91b3559ec848f56b0)) 
    
 Euclid's Algorithm for finding the greatest common divisor of two positive integers.
    
