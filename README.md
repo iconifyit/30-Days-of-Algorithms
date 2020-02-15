@@ -12,5 +12,11 @@ Life being what it is - which is to say unpredictable and hectic - I may not pos
 
 I will not only add each algorithm here but will post each one as a public gist. feel free to join the discussion on the gists.
 
+## The Algoritms
+
+1. [Day 01 - Euclid's Algorithm](src/01-euclids-gcd-algorithm.js)
+1. [Day 02 - Find Missing Number 1 ... N](src/02-find-missing-number-1-to-n.js)
+1. [Day 03 - Find Missing Number 0 ... N](src/03-find-missing-number-0-to-n.js)
+
 
                                                                                                                                                                                                                                                                                                                                                                                                                                            
