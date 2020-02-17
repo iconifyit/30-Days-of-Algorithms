@@ -21,14 +21,6 @@ const arrayToTree = (items) => {
      */
     const lookup = {};
 
-    /**
-     * Stores all item ids that have not been added to the
-     * resulting unflattened tree yet this is an opt-in property,
-     * since it has a slight runtime overhead
-     * @type {Set<unknown>}
-     */
-    const orphanIds = new Set();
-
     /* ==================================================================
      * Idea of this loop:
      * ==================================================================
@@ -44,16 +36,10 @@ const arrayToTree = (items) => {
         const parentId = item['parentId']
 
         /*
-         * Check whether item already exists in the lookup table
+         * Check whether item already exists in the lookup table. If not,
+         * add a placeholder. We'll add the details later.
          */
-        if (! Object.prototype.hasOwnProperty.call(lookup, itemId)) {
-
-            /*
-             * Add a placeholder to the lookup table. We'll add the
-             * details later.
-             */
-            lookup[itemId] = { ['children']: [] }
-        }
+        if (! lookup[itemId]) lookup[itemId] = { ['children']: [] }
 
         /*
          * Fill in the details of our previously-created placeholder
@@ -66,29 +52,31 @@ const arrayToTree = (items) => {
          */
         const TreeItem = lookup[itemId]
 
+        /* ==================================================================
+         * Determine where the item goes in the tree.
+         * ================================================================== */
+
+        /*
+         * If the item has no parentId, it is the root node.
+         */
+
         if (parentId === null || parentId === undefined || parentId === '') {
-            /*
-             * Add the root item.
-             */
+
             rootItems.push(TreeItem)
         }
+
+        /*
+         * If the item has a parentId, add it to the tree.
+         */
+
         else {
-            /*
-             * If the item has a parentId, add it to the tree.
-             */
 
             /*
-             * Check whether the parent already exists in the lookup table
+             * Check whether the parent already exists in the lookup table.
+             * If not, add a placeholder. We'll add the details later.
              */
 
-            if (! Object.prototype.hasOwnProperty.call(lookup, parentId)) {
-
-                /*
-                 * Parent is not yet there, so add a preliminary parent (its data will be added later)
-                 */
-
-                lookup[parentId] = { ['children']: [] }
-            }
+            if (! lookup[parentId]) lookup[parentId] = { ['children']: [] }
 
             /*
              * Add the current item to the parent

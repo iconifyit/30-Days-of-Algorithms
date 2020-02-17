@@ -29,3 +29,7 @@ Bubble sort has a worst-case and average complexity of О(n2), where n is the nu
 #### [Day 04 - List Intersection](src/04-find-shared-items.js) - ([gist](https://gist.github.com/iconifyit/7148719444a2c3ad0616feeed2382aad))
 
 Efficient algorithm to find the intersection of two lists. This is a common coding test problem but also a common problem to encounter in real-world apps.
+
+#### [Day 05 - Array to Tree](src/05-array-to-tree.js) - ([gist](https://gist.github.com/iconifyit/7be16df21fe9fd6853b2aabdd976214a))
+
+This is a very elegant solution by [Phillip Stanislaus](https://github.com/philipstanislaus) that converts a flat array into a tree in O(n) time. It works in a single pass. Look, ma. No Recursion !!! :-)
