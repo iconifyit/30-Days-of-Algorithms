@@ -21,3 +21,11 @@ Euclid's Algorithm for finding the greatest common divisor of two positive integ
 #### [Day 02 - Find Missing Number 1 ... N](src/02-find-missing-number-1-to-n.js) - ([gist](https://gist.github.com/iconifyit/6d43593d38723fcca48b6f1807c54022))
     
 Algorithm to find the missing number given an array of positive integers from 1 - N, with no duplicates and only one missing number.
+
+#### [Day 03 - Bubble Sort](src/03-bubble-sort.js) - ([gist](https://gist.github.com/iconifyit/25d0911af55e582f9a84fc63ee871dac))
+
+Bubble sort has a worst-case and average complexity of О(n2), where n is the number of items being sorted. Even though it is not the most efficient algorithm, it is worth knowing how to do.
+
+#### [Day 04 - List Intersection](src/04-find-shared-items.js) - ([gist](https://gist.github.com/iconifyit/7148719444a2c3ad0616feeed2382aad))
+
+Efficient algorithm to find the intersection of two lists. This is a common coding test problem but also a common problem to encounter in real-world apps.
