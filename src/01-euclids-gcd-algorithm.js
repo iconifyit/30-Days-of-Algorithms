@@ -10,6 +10,8 @@
  * 1. Divide m by n. If the remainder is 0, GCD is n.
  * 2. m <-- n, n <-- r
  * 3. Repeat until r == 0
+ *
+ * Big-O : O(log(min(x,y)))
  */
 const euclidsAlgorithm = (m, n) => {
 
