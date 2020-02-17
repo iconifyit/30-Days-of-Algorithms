@@ -1,7 +1,7 @@
 /**
  * Unflattens an array to a tree with runtime O(n)
  *
- * This algorithm was taken from Phillip Stanislaus's "Performant Array to Tree"
+ * This algorithm was taken from Philip Stanislaus's "Performant Array to Tree"
  * which has O(n) complexity. It builds the tree in a single pass.
  * @link https://github.com/philipstanislaus
  * @link https://www.npmjs.com/package/performant-array-to-tree
