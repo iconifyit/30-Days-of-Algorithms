@@ -34,7 +34,7 @@ Efficient algorithm to find the intersection of two lists. This is a common codi
 
 This is a very elegant solution by [Philip Stanislaus](https://github.com/philipstanislaus) that converts a flat array into a tree in O(n) time. It works in a single pass. Look, ma. No Recursion !!! :-)
 
-### [Day 06 - Merge Sort](src/06-merge-sort.js) - ([gist](https://gist.github.com/iconifyit/99832a8e8efdf22858bba6773eefd7ec))
+#### [Day 06 - Merge Sort](src/06-merge-sort.js) - ([gist](https://gist.github.com/iconifyit/99832a8e8efdf22858bba6773eefd7ec))
 
 Although it is not the most efficient sorting algorithm, Merge Sort is good to know and is fairly easy to implement.
 
