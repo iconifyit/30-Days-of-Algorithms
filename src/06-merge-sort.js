@@ -1,58 +1,15 @@
-function merge_sort(m) {
-    if (m.length <= 1) return m;
-
-    var left  = [],
-        right = [];
-
-    m.forEach(function(x, i) {
-        if (i < m.length / 2) {
-            left.push(x);
-        }
-        else {
-            right.push(x);
-        }
-    });
-
-    left  = merge_sort(left);
-    right = merge_sort(right);
-
-    return merge(left, right);
-}
-
 /*
-is
-// Base case. A list of zero or one elements is sorted, by definition.
-if length of m ≤ 1 then
-return m
-
-// Recursive case. First, divide the list into equal-sized sublists
-// consisting of the first half and second half of the list.
-// This assumes lists start at index 0.
-
-var left := empty list
-var right := empty list
-
-for each x with index i in m do
-    if i < (length of m)/2 then
-        add x to left
-    else
-        add x to right
-
-// Recursively sort both sublists.
-
-left := merge_sort(left)
-right := merge_sort(right)
-
-// Then merge the now-sorted sublists.
-
-return merge(left, right)
-
+Merge Sort is a stable sort which means that the same element in an array maintain their original positions with respect to each other. Overall time complexity of Merge sort is O(nLogn). It is more efficient as it is in worst case also the runtime is O(nlogn) The space complexity of Merge sort is O(n).Jan 25, 2018
  */
-
 /**
- * Merge Sort Implentation (Recursion)
+ * Recursively split, sort, and re-merge the array.
  * @param unsortedArray
  * @returns {*[]|*}
+ *
+ * Big-O:
+ *
+ * Space complexity : O(n)
+ * Time complexity  : O(n Log n)
  */
 const mergeSort = (unsortedArray) => {
 
