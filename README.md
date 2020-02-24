@@ -38,3 +38,6 @@ This is a very elegant solution by [Philip Stanislaus](https://github.com/philip
 
 Although it is not the most efficient sorting algorithm, Merge Sort is good to know and is fairly easy to implement.
 
+#### [Day 07 - Quick Sort](src/07-quick-sort.js) - ([gist](https://gist.github.com/iconifyit/02ecccc73f00548389b7812f2bae2d23))
+
+Quicksort is one of the most efficient sorting algorithm with O(log n) Big-O notation. It can be 2x - 3x faster than merge sort. This article by [César Antón Dorantes](https://medium.com/cesars-tech-insights/quicksort-17c5d24e7e5f) does a great job explaining how it works.

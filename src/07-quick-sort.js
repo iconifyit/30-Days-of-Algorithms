@@ -10,6 +10,7 @@ const partition = (items, left, right) => {
     let pivot = items[ Math.floor( (right + left) / 2 ) ];
 
     while ( left <= right ) {
+
         while ( items[left] < pivot ) left++;
         while ( items[right] > pivot ) right--;
 
@@ -62,11 +63,10 @@ var items = [
     47, 61, 20, 85, 75, 16, 15, 95,
     11, 71, 21, 86, 24, 28, 46, 5,
     89, 54, 70, 87, 35, 42, 69, 82,
-    84, 76, 60, 98, 77, 68, 8, 66,
+    84, 76, 60, 98, 77, 68, 8,  66,
     96, 78, 90
 ];
 
 console.log(
     quickSort(items, 0, items.length - 1)
 );
-// prints [2,3,5,6,7,9]
