@@ -9,11 +9,34 @@ const partition = (items, left, right) => {
 
     let pivot = items[ Math.floor( (right + left) / 2 ) ];
 
+    /*
+     * As long as the current number on the left,
+     * is less than the number on the right,
+     * move our two cursors closer to the pivot.
+     */
     while ( left <= right ) {
 
+        /*
+         * Current item on the left is less than the pivot.
+         * Move the lefthand cursor one position to
+         * the right until left is not longer less
+         * than right.
+         */
         while ( items[left] < pivot ) left++;
+
+        /*
+         * Current item on the right is greater than
+         * the pivot, move the righthand cursor toward
+         * the left until this is no longer true.
+         */
         while ( items[right] > pivot ) right--;
 
+        /*
+         * If we reach a situation where the number on the left
+         * is greater than the number on the right, but the cursors
+         * lefthand cursor is less than the righthand cursor,
+         * we need to swap the positions of the values.
+         */
         if ( left <= right ) {
             [ items[left], items[right] ] = [ items[right], items[left] ];
             left++;
