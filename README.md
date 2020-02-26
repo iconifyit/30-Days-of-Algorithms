@@ -41,3 +41,8 @@ Although it is not the most efficient sorting algorithm, Merge Sort is good to k
 #### [Day 07 - Quick Sort](src/07-quick-sort.js) - ([gist](https://gist.github.com/iconifyit/02ecccc73f00548389b7812f2bae2d23))
 
 Quicksort is one of the most efficient sorting algorithm with O(log n) Big-O notation. It can be 2x - 3x faster than merge sort. This article by [César Antón Dorantes](https://medium.com/cesars-tech-insights/quicksort-17c5d24e7e5f) does a great job explaining how it works.
+
+#### [Day 08 - Binary Search](src/08-binary-search.js) - ([gist](https://gist.github.com/iconifyit/1a5409d621520b32d16a003105c0ee84))
+
+Binary search is a divide-and-conquer algorith. Start with a sorted list, work from the ends, split the list in half, and determine which half to discard.
+

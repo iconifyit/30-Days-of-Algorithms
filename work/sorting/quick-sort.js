@@ -1,5 +1,6 @@
 /**
  * Partitions array into halves.
+ * O(log n) Big-O notation
  * @param items
  * @param left
  * @param right

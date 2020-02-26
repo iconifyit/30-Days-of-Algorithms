@@ -1,0 +1,7 @@
+https://medium.com/@codingfreak/top-algorithms-data-structures-concepts-every-computer-science-student-should-know-e0549c67b4ac
+
+https://www.techiedelight.com/maximum-subarray-problem-kadanes-algorithm/
+
+https://frontendmasters.com/courses/practical-algorithms/
+
+https://egghead.io/courses/data-structures-and-algorithms-in-javascript
