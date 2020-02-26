@@ -1,5 +1,6 @@
 /*
  * Iterative search.
+ * @see https://medium.com/@jeffrey.allen.lewis/javascript-algorithms-explained-binary-search-25064b896470
  */
 const binarySearch = (haystack, needle) => {
 

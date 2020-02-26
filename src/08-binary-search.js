@@ -1,5 +1,6 @@
 /*
  * Iterative search.
+ * Big-O = O(logN)
  */
 const binarySearch = (haystack, needle) => {
 
