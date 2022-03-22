@@ -35,7 +35,7 @@ const euclidsAlgorithm = (m, n) => {
     }
 };
 
-var m = 50,
-    n = 20;
+var m = 16,
+    n = 8;
 
-log( `GCD of ${m} & ${n} is : ` + euclidsAlgorithm(50, 20) );
+console.log( `GCD of ${m} & ${n} is : ` + euclidsAlgorithm(m, n) );

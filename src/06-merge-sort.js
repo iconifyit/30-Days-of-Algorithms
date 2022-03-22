@@ -1,5 +1,9 @@
 /*
-Merge Sort is a stable sort which means that the same element in an array maintain their original positions with respect to each other. Overall time complexity of Merge sort is O(nLogn). It is more efficient as it is in worst case also the runtime is O(nlogn) The space complexity of Merge sort is O(n).Jan 25, 2018
+Merge Sort is a stable sort which means that the same element in an array
+maintain their original positions with respect to each other. Overall time
+complexity of Merge sort is O(n Log n). It is more efficient as it is in
+worst case also the runtime is O(n log n) The space complexity of Merge
+sort is O(n).
  */
 /**
  * Recursively split, sort, and re-merge the array.
@@ -14,26 +18,27 @@ Merge Sort is a stable sort which means that the same element in an array mainta
 const mergeSort = (unsortedArray) => {
 
     /*
-     * If there is only one item, it's already sorted :-)
+     * (1) If there is only one item, it's already sorted :-)
      */
 
     if (unsortedArray.length <= 1) return unsortedArray;
 
     /*
-     * Determine the mid-point of the dataset to divide & conquer.
+     * (2) Determine the mid-point of the dataset to divide & conquer.
      */
 
     const middle = Math.floor(unsortedArray.length / 2);
 
     /*
-     * Split the array into left & right halves.
+     * (3) Split the array into left & right halves.
      */
 
-    const left  = unsortedArray.slice(0, middle);
-    const right = unsortedArray.slice(middle);
+    const
+        left  = unsortedArray.slice(0, middle),
+        right = unsortedArray.slice(middle);
 
     /*
-     * Recursively merge the halves.
+     * (4) Recursively merge the halves.
      */
 
     return merge(

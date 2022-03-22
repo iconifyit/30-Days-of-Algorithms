@@ -21,7 +21,7 @@ const bubble_sort = (a) => {
     while (swap) {
         swap = false;
         for (let i = 0; i < n; i++) {
-            if (x[i] < x[i+1]) {
+            if (x[i] > x[i+1]) {
                 /*
                  * We're just swapping the i & i + 1 items in the array
                  * without using a temp variable.
@@ -36,7 +36,16 @@ const bubble_sort = (a) => {
 }
 
 
-var a = [9,6,4,2,3,5,7,0,1];
+var a = [
+    62, 52, 88, 51, 26, 40, 13, 44,
+    83, 30, 10, 31, 99, 79, 81, 45,
+    33, 97, 17, 96, 38, 50, 39, 22,
+    47, 61, 20, 85, 10, 16, 15, 95,
+    11, 71, 21, 86, 24, 28, 46, 5,
+    89, 54, 70, 87, 35, 42, 69, 82,
+    84, 76, 60, 98, 77, 68, 8,  66,
+    96, 78, 90, 75
+];
 
 console.log(
     "Inputs : [ " + a.join(', ') + " ] \n" +
